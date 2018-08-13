@@ -16,14 +16,14 @@ import org.study.model.Member;
  */
 @WebServlet("/list")
 public class ListServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
+	
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		MemberDao dao = new MemberDao();
 		Member[] members = dao.listMember();
 		
 		request.setAttribute("members", members);
-		request.getRequestDispatcher("/WEB-INF/views/list.jsp").forward(request,response);
+		request.getRequestDispatcher("/WEB-INF/views/listForm.jsp").forward(request,response);
 	}
 
 }
