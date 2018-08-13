@@ -10,7 +10,8 @@
 	<h1>CarMall</h1>
 	<ul>
 		<li><a href="${pageContext.request.contextPath }/login">로그인</a></li>
-		<li><a href="${pageContext.request.contextPath }/register">회원등록</a></li>			
+		<li><a href="${pageContext.request.contextPath }/register">회원등록</a></li>
+		<li><a href="${pageContext.request.contextPath }/list">회원리스트</a></li>			
 	</ul>
 </body>
 </html>
